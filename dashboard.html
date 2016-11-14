@@ -21,18 +21,32 @@
 
   <body class="dashboard">
 
-<!--Top Nav-->
-<header id="top-nav" class="top-nav">
+
+<header class="dash-nav">
+  <!--Top Nav-->
+  
+<nav id="top-nav" class="top-nav">
    <a href="#" class="site-logo"><img src="images/logo white.png" /></a>
    <div class="search-bar">
       <i class="fa fa-search"></i> Search
-
    </div>
-   <div class="settings">
+   <a href="#" class="settings">
       <img src="images/avatar.png">
-      <p>Hank C.</p>
-   </div>
-</header>
+      <p>Hank C.</p></a>
+   </nav>
+
+<!--Content Nav-->
+   <nav class="content-nav">
+      <ul class="filters">
+         <li class="all-item"><a href="dashboard.html"><i class="fa fa-th-large"></i> All Items</a></li>
+         <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
+         <li><a href="#"><i class="fa fa-picture-o"></i> Images</a></li>
+         <li><a href="#"><i class="fa fa-link"></i> Links</a>
+       </ul>
+       <a href="#" class="btn">+ Add</a>
+         
+   </nav>
+
 
    <!-- LEFT NAV -->
    <nav id="left-nav" class="left-nav">
@@ -54,41 +68,37 @@
          
       </ul>
       <p>Collaborators</p>
-       <ul>
+      <ul>
          <li><a href="#"><i class="fa fa-envelope"></i> Messages</a></li>
          <li><a href="#"><i class="fa fa-users"></i> Teams</a></li>
          <li><a href="#"><i class="fa fa-user-plus"></i> Invite</a></li>
          <li><a href="#"><i class="fa fa-gear"></i> Manage</a></li>
-       </ul>
-       </ul>
+         </ul>
      </div>
 
    </nav>
 
-<main role="main">
-<!--Content Nav-->
-   <section class="content-nav">
-      <ul class="filters">
-         <li><a href="#"><i class="fa fa-th-large"></i> All Items</a></li>
-         <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
-         <li><a href="#"><i class="fa fa-picture-o"></i> Images</a></li>
-         <li><a href="#"><i class="fa fa-link"></i> Links</a></li>
-       </ul>
-   </section>
+</header>
+
+   
 
 
    <!-- Content-->
+  
+
+   <main role="main">
+
+
    <section class="content">
      <div class="container">
        <div class="header">
          <h1>All Items</h1>
-         <a href="#" class="btn">+ Add</a>
        </div>
      </div>
      <div class="container">
        <div class="content-item">
-         <img src="images/bar.jpg">
          <div class="item-box">
+          <img src="images/bar.jpg">
          </div>
        </div>
        <div class="content-item">
