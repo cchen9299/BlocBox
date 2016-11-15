@@ -16,6 +16,7 @@
    <link rel="stylesheet" href="css/font-awesome.css">
    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+   <link rel="stylesheet" href="css/dropit.css">
  
  </head>
 
@@ -26,6 +27,10 @@
   <!--Top Nav-->
   
 <nav id="top-nav" class="top-nav">
+  <!-- RESPONSIVE NAV -->
+   <a class="hamburger" id="menu" href="#">&#9776;</a>
+
+   
    <a href="#" class="site-logo"><img src="images/logo white.png" /></a>
    <div class="search-bar">
       <i class="fa fa-search"></i> Search
@@ -43,14 +48,31 @@
          <li><a href="#"><i class="fa fa-picture-o"></i> Images</a></li>
          <li><a href="#"><i class="fa fa-link"></i> Links</a>
        </ul>
-       <a href="#" class="btn">+ Add</a>
+
+
+       <ul class="menu">
+            <li>
+              <a href="#" class="btn">+ Add</a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+                  <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+                  <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+              </ul>
+            </li>
+          </ul>
          
    </nav>
 
 
-   <!-- LEFT NAV -->
+   
+   
+
+  <!-- LEFT NAV -->
    <nav id="left-nav" class="left-nav">
      
+
+
+
      <div class="items">
        <p>Items</p>
        <ul>
@@ -157,7 +179,15 @@
    </section>
 </main>
 
-
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/dropit.js"></script>
+<script type="text/javascript">
+     $(".menu").dropit();
+     $( "#menu" ).click(function() {
+         $("#left-nav").toggleClass("open", 200)
+         $("#menu").toggleClass("open", 200);
+     });
+     </script>
 
 
 
